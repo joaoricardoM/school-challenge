@@ -36,3 +36,12 @@ Este é um projeto demo minimalista, construído com React e Vite, que resolve o
 3.  Abra o navegador e acesse: `http://localhost:5173`
 
 Os dados da aplicação são mockados a partir dos arquivos JSON localizados na pasta `src/data`.
+
+## Possíveis Melhorias Futuras
+
+Apesar de o projeto atender a todos os requisitos do desafio, existem oportunidades para aprimorá-lo e torná-lo mais robusto:
+
+-   **Otimização do Estado:** Refatorar o gerenciamento de estado para utilizar a **Context API** do React ou uma biblioteca como **Zustand**, evitando o "prop drilling" em componentes complexos.
+-   **Estrutura de Código:** Extrair a lógica de manipulação do `localStorage` para um **Custom Hook** (`useLocalStorage`), tornando o código mais limpo e reutilizável.
+-   **Autenticação de Usuário:** Implementar um sistema de autenticação para proteger o acesso aos dados da aplicação.
+-   **Funcionalidades de CRUD:** Adicionar as funcionalidades de edição e exclusão de relacionamentos de professores.
