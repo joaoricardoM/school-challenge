@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-gray-50 text-gray-800; }
+.container { @apply mx-auto p-4 max-w-6xl; }
+.card { @apply bg-white p-4 rounded-lg shadow-sm; }
+.table { @apply w-full border-collapse; }
+.table th, .table td { @apply border px-2 py-1 text-sm; }
+.btn { @apply inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-600 text-white; }
+.input { @apply border px-2 py-1 rounded; }
+.select { @apply border px-2 py-1 rounded; }
+
+/* src/index.css ou styles.css */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
